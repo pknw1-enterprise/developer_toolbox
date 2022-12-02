@@ -47,7 +47,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: terradform-run
-        uses: pknw1-enterprise/tf_apply_sandbox_to_existing_repo//example/@main
+        uses: pknw1-enterprise/github_actions_terraform_control@main
         with:
           folder: ${{ inputs.terraform_folder }}
           branch_name: ${{ inputs.terraform_branch }}
